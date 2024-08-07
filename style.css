@@ -1,0 +1,397 @@
+* {
+    font-family: "Plus Jakarta Sans", "Noto Sans", sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f2f0f4;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #141118;
+}
+
+.logo img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+}
+
+.logo h2 {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #141118;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+}
+
+.section_1 {
+    display: grid;
+    grid-template-columns: 300px 500px;
+    justify-content: center; /* Centra las columnas horizontalmente en el contenedor */
+    align-content: center;   /* Centra las filas verticalmente en el contenedor */
+    height: 600px;
+    gap: 20px;               /* Espacio entre columnas, ajusta según necesidad */
+    margin-top: -50px;       /* Ajusta el valor según cuánto quieras mover hacia arriba */       
+}
+
+.section_1 .image {
+    display: flex;
+    justify-content: center; /* Centra la imagen horizontalmente en su celda */
+    align-items: center;     /* Centra la imagen verticalmente en su celda */
+}
+
+.section_1 .image img {
+    width: 400px;            /* Ancho de la imagen, ajusta según necesidad */
+}
+
+.text h1 {
+    font-weight: 900;
+    font-size: 2.70rem;
+}
+
+.text h2 {
+    font-weight: 200;
+    font-size: 1.10rem;
+}
+
+.text {
+    width: 500px;
+    margin-top: 50px;
+}
+
+.section_2 {
+    flex-direction: column; /* Coloca los elementos en una columna */
+    align-items: center;   /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    height: 700px;         /* Asegura que el contenedor ocupe toda la altura de la ventana */
+    margin-top: -100px;     /* Ajusta el valor según cuánto quieras mover hacia arriba */
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.section_2 h1 {
+    width: 100%; /* Asegura que el título ocupe todo el ancho del contenedor */
+    position: relative;
+    left: 15px;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1.1fr)); /* Tres columnas con un tamaño mínimo de 200px */
+    gap: 20px; /* Espacio entre columnas */
+    width: 100%; /* Asegura que la cuadrícula ocupe todo el ancho disponible */
+    max-width: 900px; /* Ajusta el ancho máximo según necesidad */
+    margin: auto; /* Centra la cuadrícula horizontalmente */
+    margin-top: -70px;
+}
+
+.category-item {
+    display: flex;
+    flex-direction: column; /* Asegura que la imagen y el texto estén en columna */
+    align-items: flex-start; /* Alinea el contenido a la izquierda dentro de cada ítem */
+    padding: 0 15px; /* Añade un padding horizontal para que el contenido no esté pegado al borde */
+    width: 100%; /* Asegura que el item ocupe todo el ancho de su celda */
+}
+
+.category-item .image {
+    width: 100%; /* Ocupa todo el ancho del contenedor de la cuadrícula */
+    padding-bottom: 100%; /* Usa el padding-bottom para mantener la relación de aspecto cuadrada */
+    position: relative; /* Necesario para posicionar la imagen dentro del contenedor */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que se salga del contenedor */
+}
+
+.category-item .image img {
+    position: absolute; /* Posiciona la imagen dentro del contenedor */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ocupa todo el ancho del contenedor de la imagen */
+    height: 100%; /* Ocupa toda la altura del contenedor de la imagen */
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionar */
+    border-radius: 10px; /* Borde redondeado */
+}
+
+.description {
+    color: rgb(98, 98, 98);
+    font-size: 0.9rem;
+}
+
+.section_3 {
+    display: grid;
+    grid-template-columns: 400px 300px;
+    align-items: center;   /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    height: 500px;
+    margin-top: -120px;     /* Ajusta el valor según cuánto quieras mover hacia arriba */
+}
+
+.promo_container img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.ofertas_title h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+    color: #000000; /* Text color */
+    clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+    font-weight: 900;
+    font-size: 2.70rem;
+}
+
+.ofertas_title h1 label {
+    color: #8B5FF0;
+}
+
+.footer {
+    display: flex;
+    justify-content: center; /* Centra el contenido horizontalmente */
+    padding: 2rem 1rem;      /* Ajusta el espaciado según necesidad */
+    background-color: #f2f0f4; /* Ajusta el color de fondo según necesidad */
+    position: relative;
+    bottom: 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;  /* Coloca los elementos en columna */
+    align-items: center;     /* Centra el contenido horizontalmente */
+    text-align: center;      /* Alinea el texto al centro */
+    max-width: 960px;        /* Limita el ancho máximo */
+    width: 100%;             /* Asegura que el contenedor ocupe todo el ancho disponible */
+}
+
+.footer-content > div {
+    margin-bottom: 1rem;     /* Espaciado entre los grupos de contenido */
+}
+
+.footer-content a {
+    color: #756388;          /* Color del texto de los enlaces */
+    font-size: 1rem;         /* Tamaño de fuente */
+    font-weight: normal;     /* Peso de la fuente */
+    text-decoration: none;   /* Sin subrayado en los enlaces */
+    margin: 0.5rem 0;        /* Espaciado entre los enlaces */
+}
+
+.footer-content a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón sobre el enlace */
+}
+
+.footer-content p {
+    color: #756388;          /* Color del texto del párrafo */
+    font-size: 1rem;         /* Tamaño de fuente */
+    font-weight: normal;     /* Peso de la fuente */
+    margin: 0;               /* Elimina el espaciado alrededor del párrafo */
+}
+
+/* Estilos responsivos */
+@media (min-width: 480px) {
+    .footer-content {
+        flex-direction: column; /* Asegura que todo esté en columna */
+        align-items: center;    /* Centra el contenido horizontalmente */
+        text-align: center;     /* Alinea el texto al centro */
+    }
+
+    .footer-content a {
+        margin: 0.5rem 0; /* Espaciado entre los enlaces */
+    }
+}
+
+.incognito_sin_fondo {
+    position: absolute;
+    transition: transform 0.3s ease; /* Añade una transición suave */
+}
+
+.incognito_sin_fondo:hover {
+    transform: scale(1.1); /* Escala el elemento a 110% de su tamaño original */
+}
+
+.subrallado {
+    border-bottom: #8B5FF0 2px solid;
+    font-weight: 700;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: bold;
+    position: relative;
+    display: inline-block;
+}
+
+.title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 0.4em; /* Ajusta la altura del subrayado */
+    background-color: #e9b0ff; /* Color pastel para el resaltado */
+    z-index: -1;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.title:hover::before {
+    transform: scaleX(1);
+}
+
+.section_3_2 {
+    display: grid;
+    grid-template-columns: 300px 400px;
+    align-items: center;   /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+    height: 500px;
+    margin-top: -120px;     /* Ajusta el valor según cuánto quieras mover hacia arriba */
+}
+
+.promo_container img {
+    width: 300px;
+    border-radius: 20px;
+}
+
+.redes_container {
+    display: grid;
+    grid-template-rows: 100px 100px;
+    align-items: center;   /* Centra horizontalmente el contenido */
+    justify-content: center; /* Centra verticalmente el contenido */
+}
+
+.redes_container i {
+    font-size: 50px;
+    color: #8B5FF0;
+    position: relative;
+}
+
+.redes_container i::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%; /* Cobertura del subrayado: 50% de la palabra */
+    height: 0.2em; /* Ajusta la altura del subrayado */
+    background-color: #eca7fa; /* Color pastel para el subrayado */
+    z-index: -1; /* Envía el subrayado detrás del texto */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        margin-top: 1rem;
+    }
+
+    .section_1 {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .text {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .section_2 {
+        height: auto;
+        margin-top: 0;
+    }
+
+    .category-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .section_3 {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .section_3_2 {
+        grid-template-columns: 1fr;
+        height: auto;
+        margin-top: 0;
+    }
+}
+
+
+
+.container_2 {
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+
+    padding: 20px;
+    border-radius: 8px;
+
+    margin: auto;
+    margin-bottom:50px ;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    background-color: #25d366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #1eb941;
+}

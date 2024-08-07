@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oferta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            height: 300px;
+            margin: 0 auto;
+        }
+        .discount-banner img{
+            position: relative;
+            font-weight: bold;
+            z-index: 2000;
+            width: 200px;
+            left: 150px;
+            transform: rotate(15deg);
+            margin-top: 50px;
+        }
+        .title {
+            font-size: 30px;
+            margin: 20px 0;
+        }
+        .image {
+            position: absolute;
+            top: 50px; /* Adjust as necessary */
+            width: 150px; /* Adjust as necessary */
+            height: auto;
+            z-index: 1;
+        }
+        .image1 {
+            left: 29%;
+            transform: rotate(-15deg);
+            border-top-left-radius: 10px; /* Adjust as necessary */
+        }
+        .image2 {
+            z-index: 1000;
+            left: 49%;
+            margin-top: 15px;
+            transform: translateX(-50%);
+            border-top-left-radius: 10px; /* Adjust as necessary */
+            border-top-right-radius: 10px; /* Adjust as necessary */
+        }
+        .image3 {
+            left: 40%;
+            transform: rotate(15deg);
+            border-top-right-radius: 10px; /* Adjust as necessary */
+        }
+    </style>
+</head>
+<body>
+    <div class="title">Oferta</div>
+    <div class="container">
+
+        <img src="socks_sport.jpeg" alt="Imagen 1" class="image image1">
+        <img src="fache_socks.jpeg" alt="Imagen 2" class="image image2">
+        <img src="personality_socks.jpeg" alt="Imagen 3" class="image image3">
+        <div class="discount-banner"><img src="oferta.png" alt=""></div>
+    </div>
+
+</body>
+</html>
